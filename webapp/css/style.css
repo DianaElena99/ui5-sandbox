@@ -1,0 +1,65 @@
+.navigationExamples h2 {
+	margin: 2em 5% 0;
+}
+.navigationExamples .code {
+	margin: 0 5%;
+	font-family: Consolas, Courier, monospace;
+}
+.navigationExamples .ne-flexbox1 {
+	margin: 0.2em 5%;
+	padding: 1em 0;
+	width: auto;
+	min-height: 3em;
+}
+.navigationExamples .ne-flexbox1 li{
+	margin: 0.2em;
+	padding: 0.4em 1.1em;
+	list-style-type: none;
+	text-align: center;
+	background-color: #193441;
+	cursor: pointer;
+}
+
+.navigationExamples .ne-flexbox1 li:hover {
+	background-color: rgb(229, 167, 162);
+}
+.navigationExamples .ne-flexbox2 {
+	margin: 0.2em 5%;
+	padding: 1em 0;
+	width: auto;
+	min-height: 3em;
+}
+.navigationExamples .ne-flexbox2 li {
+	margin: 0.3em;
+	width: 20%;
+	min-width: 10%;
+	list-style-type: none;
+	text-align: center;
+	background-color: #195d7e;
+	padding: 0.2em;
+	cursor: pointer;
+}
+
+html:not([data-sap-ui-browser^="ie"]) .navigationExamples .ne-flexbox2 li:hover {
+	background-color: rgb(229, 167, 162);
+}
+
+html[data-sap-ui-browser='ie11'] .navigationExamples .ne-flexbox2 li:hover {
+	background-color: rgb(229, 167, 162);
+}
+
+.navigationExamples .ne-flexbox1 li a,
+.navigationExamples .ne-flexbox2 li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 0.7em;
+}
+
+.navigationExamples .ne-flexbox3 {
+	align-items: center !important;
+    text-align: center !important;
+}
+
+.tileLayout {
+	float: left;
+}

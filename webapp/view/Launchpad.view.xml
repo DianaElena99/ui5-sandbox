@@ -1,0 +1,64 @@
+<mvc:View
+    controllerName="org.ubb.hw.controller.Launchpad"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="{i18n>launchpadTitle}"
+        showNavButton="true"
+		navButtonPress=".onNavBack">
+	
+        <VBox>
+        <Title class="sapUiTinyMarginBegin sapUiTinyMarginTop" level="H3" text="Main Applications"/>
+        <HBox>
+    	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                     header="{i18n>invoicesAppTile}"
+		             subheader="Subtitle" press="onInvoiceAppLaunch">
+		    <TileContent unit="{i18n>currEUR}" footer="{i18n>currentQuarter}">
+			    <ImageContent src="sap-icon://home-share" />
+		    </TileContent>
+	    </GenericTile>
+		
+
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                     header="Right click to open in new tab"
+		             subheader="Link tile" press="press" url="https://www.sap.com/">
+		    <TileContent>
+			    <ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
+		    </TileContent>
+	    </GenericTile>
+
+        </HBox>
+        <Title class="sapUiTinyMarginBegin sapUiTinyMarginTop" level="H3" text="Main Developer"/>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                    header="Jane Doe. Mid Consultant"
+		            subheader="Department" press="press" frameType="TwoByHalf">
+		        <TileContent>
+			        <ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/ProfileImage_LargeGenTile.png" />
+		        </TileContent>
+	        </GenericTile>
+
+             <Title class="sapUiTinyMarginBegin sapUiTinyMarginTop" level="H3" text="Latest News"/>
+
+        	<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="2500">
+			<GenericTile
+				backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png"
+				frameType="TwoByOne" >
+				<TileContent footer="August 21, 2016">
+					<NewsContent
+						contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe"
+						subheader="Today, SAP News" />
+				</TileContent>
+			</GenericTile>
+			<GenericTile
+				backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png"
+				frameType="TwoByOne">
+				<TileContent footer="August 21, 2016">
+					<NewsContent
+						contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+						subheader="Today, SAP News" />
+				</TileContent>
+			</GenericTile>
+		</SlideTile>
+        </VBox>
+	</Page>
+</mvc:View>
